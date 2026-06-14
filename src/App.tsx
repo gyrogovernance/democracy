@@ -11,8 +11,8 @@ import {
 const domains = [
   { id: 'economy', icon: Landmark, title: 'Economy', subtitle: 'Governance Management Traceability', accent: '#8b5cf6' },
   { id: 'employment', icon: Users, title: 'Employment', subtitle: 'Information Curation Variety', accent: '#3b82f6' },
-  { id: 'ecology', icon: Leaf, title: 'Ecology', subtitle: 'Intelligence Cooperation Integrity', accent: '#10b981' },
   { id: 'education', icon: GraduationCap, title: 'Education', subtitle: 'Inference Interaction Accountability', accent: '#f97316' },
+  { id: 'ecology', icon: Leaf, title: 'Ecology', subtitle: 'Intelligence Cooperation Integrity', accent: '#10b981' },
 ] as const
 
 type DomainId = (typeof domains)[number]['id']
@@ -226,7 +226,9 @@ export default function App() {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.94, y: 16 }}
                   transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-                  className="w-full max-w-[720px] glass-strong rounded-[36px] p-7 lg:p-8 shadow-[0_40px_120px_rgba(0,0,0,0.12)] border border-white"
+                  className={`w-full glass-strong rounded-[36px] p-7 lg:p-8 shadow-[0_40px_120px_rgba(0,0,0,0.12)] border border-white ${
+                    showAppSample ? 'max-w-[880px]' : 'max-w-[720px]'
+                  }`}
                   onClick={(e) => e.stopPropagation()}
                 >
                   {showAppSample ? (
