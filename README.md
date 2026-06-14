@@ -43,7 +43,7 @@ Pushes to `main` deploy automatically via GitHub Actions.
 
 **Live URL (after deploy):** https://gyrogovernance.github.io/democracy/
 
-> **Private repo note:** GitHub Pages on private repos requires **GitHub Team** (org) or **GitHub Pro** (personal). On GitHub Free, Pages only works from **public** repos — or use Vercel/Cloudflare Pages with your private repo instead.
+> If the first deploy failed before Pages was enabled, push to `main` again or re-run the workflow from the Actions tab.
 
 ## Concept
 
