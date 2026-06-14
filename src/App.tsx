@@ -374,7 +374,7 @@ function DomainCard({
     >
       <div className={`absolute inset-0 rounded-[32px] ${active ? 'shadow-float' : 'shadow-glass-lg'}`} />
       <div
-        className={`relative h-full glass-strong rounded-[32px] p-5 flex flex-col border backdrop-blur-xl overflow-hidden ${
+        className={`relative h-full glass-strong rounded-[32px] p-5 flex flex-col overflow-hidden ${
           active ? 'border-white' : 'border-white/60'
         }`}
       >
